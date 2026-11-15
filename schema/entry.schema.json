@@ -48,7 +48,7 @@
     "summary": {
       "type": "string",
       "minLength": 20,
-      "maxLength": 1500
+      "maxLength": 2500
     },
     "tags": {
       "type": "array",
@@ -65,27 +65,31 @@
       "properties": {
         "paper": {
           "type": "string",
-          "pattern": "^https?://\\S+$"
+          "pattern": "^(https?://\\S+|TODO)$"
         },
         "pdf": {
           "type": "string",
-          "pattern": "^https?://\\S+$"
+          "pattern": "^(https?://\\S+|TODO)$"
+        },
+        "github": {
+          "type": "string",
+          "pattern": "^(https?://\\S+|TODO)$"
         },
         "code": {
           "type": "string",
-          "pattern": "^https?://\\S+$"
+          "pattern": "^(https?://\\S+|TODO)$"
         },
         "website": {
           "type": "string",
-          "pattern": "^https?://\\S+$"
+          "pattern": "^(https?://\\S+|TODO)$"
         },
         "doi": {
           "type": "string",
-          "pattern": "^10\\.\\d{4,9}/\\S+$"
+          "pattern": "^(https?://\\S+|TODO)$"
         },
         "preprint": {
           "type": "string",
-          "pattern": "^https?://\\S+$"
+          "pattern": "^(https?://\\S+|TODO)$"
         }
       }
     },
