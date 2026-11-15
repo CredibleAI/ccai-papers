@@ -1,0 +1,20 @@
+type: article
+title: 'Big Tech influence over AI research revisited: Memetic analysis of attribution of ideas to affiliation'
+authors:
+- Stanislaw Gizinski
+- Paulina Kaczynska
+- Hubert Ruczynski
+- Emilia Wisnios
+- Bartosz Pielinski
+- Przemyslaw Biecek
+- Julian Sienkiewicz
+year: 2024
+venue: Journal of Informetrics
+stage: published
+tags:
+- xai
+- ai-policy
+summary: There exists a growing discourse around the domination of Big Tech on the landscape of artificial intelligence (AI) research, yet our comprehension of this phenomenon remains cursory. This paper aims to broaden and deepen our understanding of Big Tech's reach and power within AI research. It highlights the dominance not merely in terms of sheer publication volume but rather in the propagation of new ideas or memes. Current studies often oversimplify the concept of influence to the share of affiliations in academic papers, typically sourced from limited databases such as arXiv or specific academic conferences.
+links:
+  paper: https://doi.org/10.1016/j.joi.2024.101572
+  preprint: https://arxiv.org/abs/2312.12881

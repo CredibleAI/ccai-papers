@@ -1,0 +1,17 @@
+type: article
+title: Explaining BiomedCLIP with Weighted Banzhaf Interactions Supported by Tree-Gram Parsing
+authors:
+- Jakub Rymarski
+- Adam Rempala
+- Bartlomiej Sobieski
+- Przemyslaw Biecek
+year: 2026
+venue: EXPLIMED Workshop on Explainable AI for the Medical Domain, IJCAI International Joint Conferences on Artificial Intelligence  
+stage: published
+tags:
+- xai
+- medical
+- foundation-models
+- computer-vision
+links:
+  preprint: https://arxiv.org/abs/2607.23368

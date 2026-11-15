@@ -1,0 +1,17 @@
+type: article
+title: Interpretability-Guided Soft Pruning of Attention Heads in Vision Transformers
+authors:
+- Kamil Ksiazek
+- Piotr Suszynski
+- Michal Jan Wlodarczyk
+- Jacek Tabor
+- Przemyslaw Biecek
+year: 2026
+venue: arXiv
+stage: preprint
+tags:
+- mechanistic-interpretability
+- computer-vision
+- foundation-models
+links:
+  preprint: https://arxiv.org/abs/2608.00264

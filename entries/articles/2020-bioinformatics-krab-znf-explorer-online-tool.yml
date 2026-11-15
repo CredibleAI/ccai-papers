@@ -1,0 +1,18 @@
+type: article
+title: KRAB ZNF explorer - the online tool for the exploration of the transcriptomic profiles of KRAB-ZNF factors in The Cancer Genome Atlas
+authors:
+- Rafal Cylwa
+- Kornel Kielczewski
+- Marta Machnik
+- Urszula Oleksiewicz
+- Przemyslaw Biecek
+year: 2020
+venue: Bioinformatics
+stage: published
+summary: Krüppel-associated box domain zinc finger protein (KRAB ZNF) 
+  explorer is a web-based tool for comprehensive characterization of the mRNA expression status of KRAB-ZNF transcription factors in the data from The Cancer Genome Atlas study. Key functionalities cover a comparative analysis of KRAB-ZNF expression between normal and cancer tissues, an association of KRAB-ZNF expression with various pathological features, including survival analysis, association with global DNA methylation status, analyses of KRAB-ZNF isoform expressions and analysis of KRAB-ZNF levels in normal tissues.
+tags:
+- medical
+- software
+links:
+  paper: https://doi.org/10.1093/bioinformatics/btz624

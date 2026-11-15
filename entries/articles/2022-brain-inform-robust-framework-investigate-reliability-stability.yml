@@ -1,0 +1,23 @@
+type: article
+title: A robust framework to investigate the reliability and stability of explainable artificial intelligence markers of Mild Cognitive Impairment and Alzheimer's Disease
+authors:
+- Angela Lombardi
+- Domenico Diacono
+- Nicola Amoroso
+- Przemyslaw Biecek
+- Alfonso Monaco
+- Loredana Bellantuono
+- Ester Pantaleo
+- Giancarlo Logroscino
+- Roberto De Blasi
+- Sabina Tangaro
+- Roberto Bellotti
+year: 2022
+venue: Brain Informatics
+stage: published
+summary: In clinical practice, several standardized neuropsychological tests have been designed to assess and monitor the neurocognitive status of patients with neurodegenerative diseases such as Alzheimer’s disease. Important research efforts have been devoted so far to the development of multivariate machine learning models that combine the different test indexes to predict the diagnosis and prognosis of cognitive decline with remarkable results. However, less attention has been devoted to the explainability of these models. In this work, we present a robust framework to (i) perform a threefold classification between healthy control subjects, individuals with cognitive impairment, and subjects with dementia using different cognitive indexes and (ii) analyze the variability of the explainability SHAP values associated with the decisions taken by the predictive models. We demonstrate that the SHAP values can accurately characterize how each index affects a patient’s cognitive status. Furthermore, we show that a longitudinal analysis of SHAP values can provide effective information on Alzheimer’s disease progression.
+tags:
+- xai
+- medical
+links:
+  paper: https://doi.org/10.1186/s40708-022-00165-5

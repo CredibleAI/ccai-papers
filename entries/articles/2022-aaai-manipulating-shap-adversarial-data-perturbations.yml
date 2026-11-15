@@ -1,0 +1,14 @@
+type: article
+title: Manipulating SHAP via Adversarial Data Perturbations (Student Abstract)
+authors:
+- Hubert Baniecki
+- Przemyslaw Biecek
+year: 2022
+venue: AAAI 2022
+stage: published
+summary: We introduce a model-agnostic algorithm for manipulating SHapley Additive exPlanations (SHAP) with perturbation of tabular data. It is evaluated on predictive tasks from healthcare and financial domains to illustrate how crucial is the context of data distribution in interpreting machine learning models. Our method supports checking the stability of the explanations used by various stakeholders apparent in the domain of responsible AI; moreover, the result highlights the explanations' vulnerability that can be exploited by an adversary.
+tags:
+- xai
+- robustness
+links:
+  paper: https://doi.org/10.1609/aaai.v36i11.21590

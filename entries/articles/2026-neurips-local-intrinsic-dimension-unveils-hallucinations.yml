@@ -1,0 +1,19 @@
+type: article
+title: Local Intrinsic Dimension Unveils Hallucinations in Diffusion Models
+authors:
+- Bartlomiej Sobieski
+- Matthew Tivnan
+- Dawid Pludowski
+- Michal Jan Wlodarczyk
+- Pengfei Jin
+- Przemyslaw Biecek
+- Quanzheng Li
+year: 2026
+venue: NeurIPS 2026
+stage: published
+tags:
+- generative-models
+- computer-vision
+links:
+  preprint: https://arxiv.org/abs/2605.05026
+  paper: TODO

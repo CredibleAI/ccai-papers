@@ -1,0 +1,15 @@
+type: article
+title: An Experimental Study on the Rashomon Effect of Balancing Methods in Imbalanced Classification
+authors:
+- Mustafa Cavus
+- Przemyslaw Biecek
+year: 2024
+venue: ECML PKDD 2024 Workshops
+stage: published
+tags:
+- rashomon
+- tabular-data
+summary: Predictive models may generate biased predictions when classifying imbalanced datasets. This happens when the model favors the majority class, leading to low performance in accurately predicting the minority class. To address this issue, balancing or resampling methods are critical data-centric AI approaches in the modeling process to improve prediction performance. However, there have been debates and questions about the functionality of these methods in recent years. In particular, many candidate models may exhibit very similar predictive performance, called the Rashomon effect, in model selection, and they may even produce different predictions for the same observations. Selecting one of these models without considering the predictive multiplicity—which is the case of yielding conflicting models’ predictions for any sample—can result in blind selection. In this paper, the impact of balancing methods on predictive multiplicity is examined using the Rashomon effect. It is crucial because the blind model selection in data-centric AI is risky from a set of approximately equally accurate models. This may lead to severe problems in model selection, validation, and explanation. To tackle this matter, we conducted real dataset experiments to observe the impact of balancing methods on predictive multiplicity through the Rashomon effect by using a newly proposed metric obscurity in addition to the existing ones ambiguity and discrepancy. Our findings showed that balancing methods inflate the predictive multiplicity and yield varying results. To monitor the trade-off between the prediction performance and predictive multiplicity for conducting the modeling process responsibly, we proposed using the extended version of the performance-gain plot when balancing the training data.
+links:
+  paper: https://doi.org/10.1007/978-3-032-25311-8_1
+  preprint: https://arxiv.org/abs/2405.01557

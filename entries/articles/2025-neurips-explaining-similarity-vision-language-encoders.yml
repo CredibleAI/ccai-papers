@@ -1,0 +1,20 @@
+type: article
+title: Explaining Similarity in Vision-Language Encoders with Weighted Banzhaf Interactions
+authors:
+- Hubert Baniecki
+- Maximilian Muschalik
+- Fabian Fumagalli
+- Barbara Hammer
+- Eyke Hüllermeier
+- Przemyslaw Biecek
+year: 2025
+venue: NeurIPS 2025
+stage: published
+tags:
+- xai
+- foundation-models
+- computer-vision
+summary: Language-image pre-training (LIP) enables the development of vision-language models capable of zero-shot classification, localization, multimodal retrieval, and semantic understanding. Various explanation methods have been proposed to visualize the importance of input image-text pairs on the model's similarity outputs. However, popular saliency maps are limited by capturing only first-order attributions, overlooking the complex cross-modal interactions intrinsic to such encoders. We introduce faithful interaction explanations of LIP models (FIxLIP) as a unified approach to decomposing the similarity in vision-language encoders. FIxLIP is rooted in game theory, where we analyze how using the weighted Banzhaf interaction index offers greater flexibility and improves computational efficiency over the Shapley interaction quantification framework. From a practical perspective, we propose how to naturally extend explanation evaluation metrics, such as the pointing game and area between the insertion/deletion curves, to second-order interaction explanations. Experiments on the MS COCO and ImageNet-1k benchmarks validate that second-order methods, such as FIxLIP, outperform first-order attribution methods. Beyond delivering high-quality explanations, we demonstrate the utility of FIxLIP in comparing different models, e.g. CLIP vs. SigLIP-2.
+links:
+  paper: https://papers.nips.cc/paper_files/paper/2025/hash/4e7686b7b147fac3352b24ab86ff78fb-Abstract-Conference.html
+  preprint: https://arxiv.org/abs/2508.05430

@@ -1,0 +1,18 @@
+type: article
+title: 'Cleora: A Simple, Strong and Scalable Graph Embedding Scheme'
+authors:
+- Barbara Rychalska
+- Piotr Babel
+- Konrad Goluchowski
+- Andrzej Michalowski
+- Jacek Dabrowski
+- Przemyslaw Biecek
+year: 2021
+venue: ICONIP 2021
+stage: published
+summary: The area of graph embeddings is currently dominated by contrastive learning methods, which demand formulation of an explicit objective function and sampling of positive and negative examples. One of the leading class of models are graph convolutional networks (GCNs), which suffer from numerous performance issues. 
+  In this paper we present Cleora a purely unsupervised and highly scalable graph embedding scheme. Cleora can be likened to a GCN stripped down to its most effective core operation - the repeated neighborhood aggregation. Cleora does not require the application of a GPU and can embed massive graphs on CPU only, beating other state-of-the-art CPU algorithms in terms of speed and quality as measured on downstream tasks. Cleora has been applied in top machine learning competitions involving recommendations and graph processing, taking the podium in KDD Cup 2021, WSDM Challenge 2021, and SIGIR eCom Challenge 2020. We open-source Cleora under the MIT license allowing commercial use under https://github.com/Synerise/cleora.
+tags:
+- graphs
+links:
+  paper: https://doi.org/10.1007/978-3-030-92273-3_28

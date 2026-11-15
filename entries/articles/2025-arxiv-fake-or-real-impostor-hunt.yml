@@ -1,0 +1,21 @@
+type: article
+title: 'Fake or Real: The Impostor Hunt in Texts for Space Operations'
+authors:
+- Agata Kaczmarek
+- Dawid Pludowski
+- Piotr Wilczynski
+- Krzysztof Kotowski
+- Ramez Shendy
+- Evridiki Vasileia Ntagiou
+- Jakub Nalepa
+- Artur Janicki
+- Przemyslaw Biecek
+year: 2025
+venue: arXiv
+stage: preprint
+tags:
+- robustness
+- space
+- nlp
+links:
+  preprint: https://arxiv.org/abs/2507.13508

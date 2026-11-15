@@ -1,0 +1,25 @@
+type: article
+title: 'Trojan horse hunt in deep forecasting models: Insights from the European Space Agency competition'
+authors:
+- Krzysztof Kotowski
+- Ramez Shendy
+- Jakub Nalepa
+- Agata Kaczmarek
+- Dawid Pludowski
+- Piotr Wilczynski
+- Artur Janicki
+- Przemyslaw Biecek
+- Ambros Marzetta
+- Atul Pande
+- Lalit Chandra Routhu
+- Swapnil Srivastava
+- Evridiki Vasileia Ntagiou
+year: 2026
+venue: arXiv
+stage: preprint
+tags:
+- robustness
+- space
+- time-series
+links:
+  preprint: https://arxiv.org/abs/2603.20108

@@ -1,0 +1,23 @@
+type: article
+title: 'COGENT: Counterfactual Gaussian Explanations for Volumetric Medical Images'
+authors:
+- Dorian Rzasa
+- Bartosz Zabdyr
+- Krzysztof Piekarz
+- Jakub Grzywaczewski
+- Bartlomiej Sobieski
+- Przemyslaw Biecek
+- Zaneta Swiderska-Chadaj
+- Olga Sliwicka
+- Przemyslaw Spurek
+- Joanna Swiebocka-Wiek
+year: 2026
+venue: arXiv
+stage: preprint
+tags:
+- xai
+- counterfactuals
+- medical
+- computer-vision
+links:
+  preprint: https://arxiv.org/abs/2608.11422

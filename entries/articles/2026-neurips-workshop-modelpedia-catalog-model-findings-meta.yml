@@ -1,0 +1,21 @@
+type: article
+title: 'Modelpedia: A Catalog of Model Findings for the Meta-Science of AI'
+authors:
+- Franciszek Bernat
+- Dawid Pludowski
+- Michal Jan Wlodarczyk
+- Luca Longo
+- Jianlong Zhou
+- Andreas Holzinger
+- Riccardo Guidotti
+- Wojciech Samek
+- Przemyslaw Biecek
+year: 2026
+venue: NeurIPS Meta-Science Workshop
+stage: published
+tags:
+- meta-science
+- foundation-models
+- ai-policy
+links:
+  preprint: https://arxiv.org/abs/2609.01090

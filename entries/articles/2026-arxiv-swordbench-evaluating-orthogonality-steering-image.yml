@@ -1,0 +1,15 @@
+type: article
+title: 'SwordBench: Evaluating Orthogonality of Steering Image Representations'
+authors:
+- Vladimir Zaigrajew
+- Dawid Pludowski
+- Hubert Baniecki
+- Przemyslaw Biecek
+year: 2026
+venue: arXiv
+stage: preprint
+tags:
+- mechanistic-interpretability
+- computer-vision
+links:
+  preprint: https://arxiv.org/abs/2605.16372

@@ -1,0 +1,18 @@
+type: article
+title: Retrieval and Analysis of Eurostat Open Data with the eurostat Package
+authors:
+- Leo Lahti
+- Janne Huovari
+- Markus Kainu
+- Przemyslaw Biecek
+year: 2017
+venue: The R Journal
+stage: published
+summary: The increasing availability of open statistical 
+  data resources is providing novel opportunities 
+  for research and citizen science. 
+  Efficient algorithmic tools are needed to realize the full potential of the new information resources. We introduce the eurostat R package that provides a collection of custom tools for the Eurostat open data service, including functions to query, download, manipulate, and visualize these data sets in a smooth, automated and reproducible manner. The online documentation provides detailed examples on the analysis of these spatio-temporal data collections. This work provides substantial improvements over the previously available tools, and has been extensively tested by an active user community. The eurostat R package contributes to the growing open source ecosystem dedicated to reproducible research in computational social science and digital humanities.
+tags:
+- r
+links:
+  paper: https://doi.org/10.32614/rj-2017-019

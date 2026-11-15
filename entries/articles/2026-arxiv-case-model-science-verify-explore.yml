@@ -1,0 +1,17 @@
+type: article
+title: 'The Case for Model Science: Verify, Explore, Steer, Refine'
+authors:
+- Przemyslaw Biecek
+- Luca Longo
+- Jianlong Zhou
+- Thomas Fel
+- Andreas Holzinger
+- Wojciech Samek
+year: 2026
+venue: arXiv
+stage: preprint
+tags:
+- position-paper
+- ai-policy
+links:
+  preprint: https://arxiv.org/abs/2606.01189

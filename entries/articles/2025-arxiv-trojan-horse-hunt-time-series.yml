@@ -1,0 +1,21 @@
+type: article
+title: Trojan Horse Hunt in Time Series Forecasting for Space Operations
+authors:
+- Krzysztof Kotowski
+- Ramez Shendy
+- Jakub Nalepa
+- Przemyslaw Biecek
+- Piotr Wilczynski
+- Agata Kaczmarek
+- Dawid Pludowski
+- Artur Janicki
+- Evridiki Vasileia Ntagiou
+year: 2025
+venue: arXiv
+stage: preprint
+tags:
+- robustness
+- space
+- time-series
+links:
+  preprint: https://arxiv.org/abs/2506.01849

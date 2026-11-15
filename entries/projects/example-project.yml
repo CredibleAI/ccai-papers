@@ -1,0 +1,13 @@
+type: project
+title: "Example Research Project"
+authors:
+  - Jane Doe
+year: 2025
+status: active
+summary: >
+  Example project entry. Describe the goal of the project, who is involved
+  and what outputs (papers, tools, datasets) it produces.
+tags: [llm, evaluation]
+links:
+  website: https://example.org
+contact: jane.doe@example.org

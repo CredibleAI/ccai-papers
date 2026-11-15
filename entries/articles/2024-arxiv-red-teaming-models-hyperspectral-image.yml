@@ -1,0 +1,20 @@
+type: article
+title: Red Teaming Models for Hyperspectral Image Analysis Using Explainable AI
+authors:
+- Vladimir Zaigrajew
+- Hubert Baniecki
+- Lukasz Tulczyjew
+- Agata M. Wijata
+- Jakub Nalepa
+- Nicolas Longépé
+- Przemyslaw Biecek
+year: 2024
+venue: ICLR 2024 Machine Learning for Remote Sensing (ML4RS) Workshop
+stage: preprint
+tags:
+- xai
+- robustness
+- space
+- computer-vision
+links:
+  preprint: https://arxiv.org/abs/2403.08017

@@ -1,0 +1,17 @@
+type: article
+title: 'Deep Spatial Context: When Attention-Based Models Meet Spatial Regression (Digital Pathology)'
+authors:
+- Paulina Tomaszewska
+- Elzbieta Sienkiewicz
+- Mai P. Hoang
+- Przemyslaw Biecek
+year: 2025
+venue: AIME 2025
+stage: published
+tags:
+- medical
+- digital-pathology
+summary: Computer vision models are increasingly used in high-stakes areas like medical image analysis. The analysis of high-resolution images, such as Whole Slide Images in histopathology, requires complex attention-based Multiple Instance Learning models. Despite the popularity of these models, surprisingly, little is known about the kind of relationships that they learn. To address this research gap, we propose the Deep Spatial Context (DSCon) method to analyze the spatial relationships in these models using three quantitative measures that assess the strength of the spatial structure detectable at the level of targets, features and residuals. DSCon borrows from spatial regression to provide a solid theoretical basis for analysing deep computer vision models. We show that DSCon can be used to inspect models in depth and do a comparative analysis of models with different architectures (CLAM vs. TransMIL). Moreover, the method allows for the analysis of models reasoning on different subsets of data (i.e., tumor vs. healthy images). The proposed method extends the range of tools for diagnosing the AI models and contributes to the development of more trustworthy models.
+links:
+  paper: https://doi.org/10.1007/978-3-031-95838-0_43
+  preprint: https://arxiv.org/abs/2401.10044

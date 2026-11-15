@@ -1,0 +1,13 @@
+type: article
+title: 'modelStudio: Interactive Studio with Explanations for ML Predictive Models'
+authors:
+- Hubert Baniecki
+- Przemyslaw Biecek
+year: 2019
+venue: Journal of Open Source Software
+stage: published
+tags:
+- xai
+- software
+links:
+  paper: https://doi.org/10.21105/joss.01798

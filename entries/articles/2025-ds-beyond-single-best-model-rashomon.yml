@@ -1,0 +1,17 @@
+type: article
+title: 'Beyond the Single-Best Model: Rashomon Partial Dependence Profile for Trustworthy Explanations in AutoML'
+authors:
+- Mustafa Cavus
+- Jan N. van Rijn
+- Przemyslaw Biecek
+year: 2025
+venue: Discovery Science 2025
+stage: published
+tags:
+- xai
+- rashomon
+- automl
+summary: Automated machine learning systems efficiently streamline model selection but often focus on a single best-performing model, overlooking explanation uncertainty—an essential concern in human-centered explainable AI. To address this, we propose a novel framework that incorporates model multiplicity into explanation generation by aggregating partial dependence profiles (PDP) from a set of near-optimal models, known as the Rashomon set. The resulting Rashomon PDP captures interpretive variability and highlights areas of disagreement, providing users with a richer, uncertainty-aware view of feature effects. To evaluate its usefulness, we introduce two quantitative metrics, the coverage rate and the mean width of confidence intervals, to evaluate the consistency between the standard PDP and the proposed Rashomon PDP. Experiments on 35 regression datasets from the OpenML-CTR23 benchmark suit show that in most of the cases, the Rashomon PDP covers less than  of the best model’s PDP, underscoring the limitations of single-model explanations. Our findings suggest that Rashomon PDP improves the reliability and trustworthiness of model interpretations by adding additional information that would otherwise be neglected. This is particularly useful in high-stakes domains where transparency and confidence are critical.
+links:
+  paper: https://doi.org/10.1007/978-3-032-05461-6_29
+  preprint: https://arxiv.org/abs/2507.14744

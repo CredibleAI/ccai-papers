@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Publications & Projects · CCAI</title>
+<style>
+  @font-face { font-family:"Lexend Deca"; font-style:normal; font-weight:400; font-display:swap; src:url(assets/fonts/lexend-deca-latin-400-normal.woff2) format("woff2"); unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+  @font-face { font-family:"Lexend Deca"; font-style:normal; font-weight:400; font-display:swap; src:url(assets/fonts/lexend-deca-latin-ext-400-normal.woff2) format("woff2"); unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+  @font-face { font-family:"Roboto Mono"; font-style:normal; font-weight:400; font-display:swap; src:url(assets/fonts/roboto-mono-latin-400-normal.woff2) format("woff2"); unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+  @font-face { font-family:"Roboto Mono"; font-style:normal; font-weight:400; font-display:swap; src:url(assets/fonts/roboto-mono-latin-ext-400-normal.woff2) format("woff2"); unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+  /* CCAI brand: greyscale + black/white contrast; PW Prussian only for small accents (underlines, details) */
+  :root {
+    --black:#000; --charcoal:#1A1A1A; --grey:#C7C7C7; --light:#F6F6F6; --white:#FFF;
+    --prussian:#004A6C; --muted:#5c5c5c;
+    --sans:"Lexend Deca", system-ui, sans-serif;
+    --mono:"Roboto Mono", ui-monospace, monospace;
+    --wrap: 1120px;
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body { margin:0; font:400 16px/1.55 var(--sans); color:var(--charcoal); background:var(--light); }
+  a { color:inherit; text-decoration-color:var(--prussian); text-underline-offset:3px; text-decoration-thickness:2px; }
+  a:hover { text-decoration-color:var(--black); }
+  .wrap { max-width:var(--wrap); margin:0 auto; padding:0 24px; }
+  .mono { font-family:var(--mono); text-transform:uppercase; letter-spacing:.04em; }
+
+  /* ── Navbar (horizontal logo, ≥230 px, safe area kept) ── */
+  .nav { background:var(--white); border-bottom:1px solid var(--grey); }
+  .nav .wrap { display:flex; align-items:center; justify-content:space-between; gap:24px; height:84px; }
+  .nav .logo { display:block; padding:12px 0; }
+  .nav .logo img { width:250px; height:auto; display:block; }
+  .nav ul { list-style:none; display:flex; gap:22px; margin:0; padding:0; font:400 13px var(--mono); text-transform:uppercase; letter-spacing:.05em; }
+  .nav ul a { text-decoration:none; padding:4px 0; border-bottom:2px solid transparent; }
+  .nav ul a:hover { border-color:var(--prussian); }
+
+  /* ── Hero: key visual (marble + pixel pattern + slogan box) ── */
+  .hero { position:relative; height:420px; overflow:hidden; background:#888 url(assets/marble.jpg) center/cover; }
+  .hero .px { position:absolute; background:var(--white); }
+  .hero .slogan { position:absolute; left:max(24px, calc(50% - var(--wrap)/2 + 24px)); top:56px; background:var(--white); padding:20px 28px 22px; max-width:calc(100% - 48px); }
+  .hero h1 { margin:0; font:400 clamp(2rem, 5vw, 3.4rem)/1.05 var(--sans); color:var(--black); letter-spacing:-.01em; }
+  .hero .slogan p { margin:12px 0 0; font:400 13px/1.5 var(--mono); text-transform:uppercase; letter-spacing:.05em; color:var(--charcoal); }
+
+  /* ── Search bar ── */
+  .search { position:sticky; top:0; z-index:5; background:var(--white); border-bottom:1px solid var(--grey); }
+  .controls { display:flex; flex-wrap:wrap; gap:10px; padding:16px 0; }
+  input[type=search], select { font:inherit; font-size:15px; padding:11px 14px; border:1px solid var(--grey); border-radius:0; background:var(--white); color:var(--black); outline:none; }
+  input[type=search]:focus, select:focus { border-color:var(--black); box-shadow:inset 0 -2px 0 var(--prussian); }
+  input[type=search] { flex:1 1 320px; }
+  select { font:400 13px var(--mono); text-transform:uppercase; letter-spacing:.04em; cursor:pointer; }
+
+  /* ── Tags / results ── */
+  main { padding:32px 24px 60px; }
+  .search .controls { padding:16px 24px; }
+  .label { font:600 12px var(--mono); text-transform:uppercase; letter-spacing:.06em; color:var(--muted); margin:0 0 10px; }
+  .tags { display:flex; flex-wrap:wrap; gap:6px; margin:0 0 26px; }
+  .chip { font:400 11.5px/1 var(--mono); text-transform:uppercase; letter-spacing:.04em; padding:6px 9px; background:var(--white); border:1px solid var(--grey); color:var(--charcoal); cursor:pointer; user-select:none; }
+  .chip:hover { border-color:var(--black); }
+  .chip.on { background:var(--black); border-color:var(--black); color:var(--white); }
+  .count { font:400 12px var(--mono); text-transform:uppercase; letter-spacing:.06em; color:var(--muted); padding-bottom:10px; margin-bottom:16px; border-bottom:1px solid var(--grey); }
+  #results { display:grid; gap:14px; }
+  .card { background:var(--white); padding:22px 24px 18px; border-left:4px solid var(--black); }
+  .card h2 { font:400 1.18rem/1.35 var(--sans); color:var(--black); margin:0 0 6px; }
+  .badges { display:flex; gap:6px; margin-bottom:10px; }
+  .badge { font:400 10.5px/1 var(--mono); text-transform:uppercase; letter-spacing:.06em; padding:5px 7px; border:1px solid var(--black); color:var(--black); }
+  .badge.stage { background:var(--light); border-color:var(--grey); color:var(--charcoal); }
+  .meta { color:var(--muted); font-size:.92rem; }
+  .meta .venue { color:var(--black); }
+  .card p { margin:10px 0 0; font-size:.95rem; }
+  .card .tags { margin:14px 0 0; }
+  .card .chip { font-size:10.5px; padding:4px 7px; }
+  .links { display:flex; flex-wrap:wrap; gap:16px; align-items:center; margin-top:14px; font:400 12px var(--mono); text-transform:uppercase; letter-spacing:.05em; }
+  .links a.edit { margin-left:auto; color:var(--muted); text-decoration:none; }
+  .links a.edit:hover { color:var(--black); }
+  mark { background:transparent; color:inherit; box-shadow:inset 0 -.45em 0 rgba(0,74,108,.18); }
+
+  /* ── Footer ── */
+  footer { background:var(--white); border-top:1px solid var(--grey); }
+  footer .wrap { display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:20px; padding:36px 24px; font:400 12px var(--mono); text-transform:uppercase; letter-spacing:.05em; color:var(--muted); }
+  footer img { width:240px; display:block; }
+
+  @media (max-width: 720px) {
+    .nav .wrap { height:72px; }
+    .nav .logo img { width:230px; }   /* brand minimum for the horizontal logo */
+    .nav ul { display:none; }
+    .hero { height:360px; }
+    .hero .slogan { top:32px; padding:16px 18px 18px; }
+    .hero .px.d { display:none; }
+    .card { padding:18px 18px 14px; }
+    .search .controls { padding:12px 16px; gap:8px; }
+    input[type=search] { flex-basis:100%; }
+    select { flex:1 1 0; min-width:0; padding:10px 6px; font-size:11px; }
+    main { padding:24px 16px 48px; }
+    #tags { flex-wrap:nowrap; overflow-x:auto; margin:0 -16px 22px; padding:0 16px 6px; scrollbar-width:none; }
+    #tags .chip { flex:none; }
+  }
+</style>
+</head>
+<body>
+<nav class="nav">
+  <div class="wrap">
+    <a class="logo" href="./" aria-label="CCAI – Centre for Credible Artificial Intelligence"><img src="assets/ccai-logo-horizontal.svg" alt="CCAI – Centre for Credible Artificial Intelligence"></a>
+    <ul>
+      <li><a id="add-article" href="#">Add article</a></li>
+      <li><a id="add-project" href="#">Add project</a></li>
+      <li><a id="repo-link" href="#">GitHub</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" aria-label="Key visual">
+  <!-- pixel pattern (white modules over the marble), positions in % of the hero -->
+  <div class="px d" style="left:0;top:0;width:9%;height:12%"></div>
+  <div class="px" style="left:0;top:58%;width:22%;height:26%"></div>
+  <div class="px" style="left:6%;top:84%;width:24%;height:16%"></div>
+  <div class="px d" style="left:31%;top:52%;width:15%;height:30%"></div>
+    <div class="px" style="left:72%;top:4%;width:7%;height:46%"></div>
+  <div class="px" style="left:79%;top:34%;width:8%;height:8%"></div>
+  <div class="px" style="left:87%;top:4%;width:5%;height:92%"></div>
+  <div class="px d" style="left:72%;top:58%;width:7%;height:42%"></div>
+  <div class="px d" style="left:54%;top:92%;width:23%;height:8%"></div>
+  <div class="px" style="left:95%;top:46%;width:5%;height:36%"></div>
+  <div class="slogan">
+    <h1>Publications &amp; Projects</h1>
+    <p>Papers, preprints and projects of CCAI.<br>Decoding AI. Layer by layer.</p>
+  </div>
+</header>
+
+<div class="search">
+  <div class="wrap controls">
+    <input id="q" type="search" placeholder="Search titles, authors, venues, tags…" aria-label="Search">
+    <select id="type" aria-label="Type"><option value="">All types</option><option value="article">Articles</option><option value="project">Projects</option></select>
+    <select id="stage" aria-label="Stage"><option value="">Any stage</option><option value="published">Published</option><option value="preprint">Preprint</option><option value="under-review">Under review</option></select>
+    <select id="year" aria-label="Year"><option value="">Any year</option></select>
+  </div>
+</div>
+
+<main class="wrap">
+  <p class="label">Topics</p>
+  <div class="tags" id="tags"></div>
+  <div class="count" id="count"></div>
+  <div id="results"></div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="assets/ccai-logo-horizontal.svg" alt="CCAI – Centre for Credible Artificial Intelligence">
+    <span>Warsaw University of Technology · Entries are added via pull requests</span>
+  </div>
+</footer>
+
+<script>
+// ── Configure: your GitHub repo (owner/name) and default branch ──
+const REPO = "OWNER/REPO";
+const BRANCH = "main";
+
+const TEMPLATES = {
+  article: `type: article\ntitle: "Paper title"\nauthors:\n  - First Author\nyear: ${new Date().getFullYear()}\nvenue: Conference or journal (or arXiv)\nstage: preprint   # preprint | under-review | published\nsummary: >\n  2–4 sentences about the paper.\ntags: [tag-one, tag-two]\nlinks:\n  paper: https://\n  code: https://\n`,
+  project: `type: project\ntitle: "Project name"\nauthors:\n  - Lead Person\nyear: ${new Date().getFullYear()}\nstatus: active\nsummary: >\n  Goal of the project and its outputs.\ntags: [tag-one]\nlinks:\n  website: https://\ncontact: name@example.org\n`
+};
+document.getElementById("repo-link").href = `https://github.com/${REPO}`;
+for (const t of ["article", "project"]) {
+  document.getElementById("add-" + t).href =
+    `https://github.com/${REPO}/new/${BRANCH}/entries/${t}s?filename=my-${t}-title.yml&value=${encodeURIComponent(TEMPLATES[t])}`;
+}
+
+const $ = id => document.getElementById(id);
+const norm = s => (s || "").toString().toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/ł/g, "l");
+const esc = s => (s || "").toString().replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+let DATA = [], activeTags = new Set();
+
+function highlight(text, terms) {
+  let html = esc(text);
+  if (!terms.length) return html;
+  // highlight on accent-insensitive match by walking the normalized string
+  const n = norm(text), marks = [];
+  for (const t of terms) { let i = 0; while ((i = n.indexOf(t, i)) !== -1) { marks.push([i, i + t.length]); i += t.length; } }
+  if (!marks.length) return html;
+  marks.sort((a, b) => a[0] - b[0]);
+  let out = "", pos = 0;
+  for (const [s, e] of marks) { if (s < pos) continue; out += esc(text.slice(pos, s)) + "<mark>" + esc(text.slice(s, e)) + "</mark>"; pos = e; }
+  return out + esc(text.slice(pos));
+}
+
+function score(item, terms) {
+  if (!terms.length) return 1;
+  let total = 0;
+  for (const t of terms) {
+    let s = 0;
+    if (item._title.includes(t)) s += 5;
+    if (item._tags.includes(t)) s += 4;
+    if (item._authors.includes(t)) s += 3;
+    if (item._venue.includes(t)) s += 2;
+    if (item._summary.includes(t)) s += 1;
+    if (!s) return 0;          // every term must match somewhere
+    total += s;
+  }
+  return total;
+}
+
+function render() {
+  const terms = norm($("q").value).split(/\s+/).filter(Boolean);
+  const type = $("type").value, year = $("year").value, stage = $("stage").value;
+  const hits = DATA
+    .filter(d => (!type || d.type === type) && (!year || String(d.year) === year)
+              && (!stage || (d.type === "article" && (d.stage || "published") === stage))
+              && [...activeTags].every(t => (d.tags || []).includes(t)))
+    .map(d => [score(d, terms), d]).filter(([s]) => s > 0)
+    .sort((a, b) => b[0] - a[0] || b[1].year - a[1].year);
+
+  $("count").textContent = `${hits.length} / ${DATA.length} entries`;
+  $("results").innerHTML = hits.map(([, d]) => {
+    const links = Object.entries(d.links || {}).map(([k, v]) =>
+      `<a href="${esc(k === "doi" ? "https://doi.org/" + v : v)}" target="_blank" rel="noopener">${esc(k)}</a>`).join("");
+    const meta = [d.authors && highlight(d.authors.join(", "), terms),
+                  d.venue && `<span class="venue">${highlight(d.venue, terms)}</span>`, d.year].filter(Boolean).join(" · ");
+    return `<article class="card">
+      <div class="badges"><span class="badge">${esc(d.type)}</span>${d.stage && d.stage !== "published" ? `<span class="badge stage">${esc(d.stage)}</span>` : ""}${d.status ? `<span class="badge stage">${esc(d.status)}</span>` : ""}</div>
+      <h2>${highlight(d.title, terms)}</h2>
+      <div class="meta">${meta}</div>
+      ${d.summary ? `<p>${highlight(d.summary, terms)}</p>` : ""}
+      <div class="tags">${(d.tags || []).map(t => `<span class="chip${activeTags.has(t) ? " on" : ""}" data-tag="${esc(t)}">${esc(t)}</span>`).join("")}</div>
+      <div class="links">${links}<a class="edit" href="https://github.com/${REPO}/edit/${BRANCH}/entries/${esc(d.id)}.yml" target="_blank" rel="noopener">✎ edit</a></div>
+    </article>`;
+  }).join("") || "<p class=\"label\">No matches.</p>";
+
+  $("tags").querySelectorAll(".chip").forEach(c => c.classList.toggle("on", activeTags.has(c.dataset.tag)));
+  const p = new URLSearchParams();
+  if ($("q").value) p.set("q", $("q").value);
+  if (type) p.set("type", type);
+  if (year) p.set("year", year);
+  if (activeTags.size) p.set("tags", [...activeTags].join(","));
+  history.replaceState(null, "", p.toString() ? "#" + p : location.pathname);
+}
+
+document.addEventListener("click", e => {
+  const t = e.target.closest(".chip")?.dataset.tag;
+  if (!t) return;
+  activeTags.has(t) ? activeTags.delete(t) : activeTags.add(t);
+  render();
+});
+["q", "type", "year", "stage"].forEach(id => $(id).addEventListener("input", render));
+
+fetch("data.json").then(r => r.json()).then(data => {
+  DATA = data.map(d => ({ ...d,
+    _title: norm(d.title), _summary: norm(d.summary), _venue: norm(d.venue),
+    _authors: norm((d.authors || []).join(" ")), _tags: (d.tags || []).map(norm) }));
+  const years = [...new Set(DATA.map(d => d.year))].sort((a, b) => b - a);
+  $("year").innerHTML += years.map(y => `<option>${y}</option>`).join("");
+  const counts = {};
+  DATA.forEach(d => (d.tags || []).forEach(t => counts[t] = (counts[t] || 0) + 1));
+  $("tags").innerHTML = Object.entries(counts).sort((a, b) => b[1] - a[1])
+    .map(([t, n]) => `<span class="chip" data-tag="${esc(t)}">${esc(t)} (${n})</span>`).join("");
+  const p = new URLSearchParams(location.hash.slice(1));
+  $("q").value = p.get("q") || ""; $("type").value = p.get("type") || ""; $("year").value = p.get("year") || "";
+  (p.get("tags") || "").split(",").filter(Boolean).forEach(t => activeTags.add(t));
+  render();
+}).catch(() => { $("results").innerHTML = "<p>Could not load data.json — run <code>python scripts/build.py</code>.</p>"; });
+</script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Article or project entry",
+  "type": "object",
+  "required": [
+    "type",
+    "title",
+    "year",
+    "tags"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "type": {
+      "enum": [
+        "article",
+        "project"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 5
+    },
+    "authors": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 2
+      },
+      "minItems": 1
+    },
+    "year": {
+      "type": "integer",
+      "minimum": 1950,
+      "maximum": 2100
+    },
+    "venue": {
+      "type": "string",
+      "description": "Conference / journal (articles)"
+    },
+    "status": {
+      "enum": [
+        "planned",
+        "active",
+        "finished"
+      ],
+      "description": "Projects only"
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 20,
+      "maxLength": 1500
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9][a-z0-9-]*$"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "links": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "paper": {
+          "type": "string",
+          "pattern": "^https?://\\S+$"
+        },
+        "pdf": {
+          "type": "string",
+          "pattern": "^https?://\\S+$"
+        },
+        "code": {
+          "type": "string",
+          "pattern": "^https?://\\S+$"
+        },
+        "website": {
+          "type": "string",
+          "pattern": "^https?://\\S+$"
+        },
+        "doi": {
+          "type": "string",
+          "pattern": "^10\\.\\d{4,9}/\\S+$"
+        },
+        "preprint": {
+          "type": "string",
+          "pattern": "^https?://\\S+$"
+        }
+      }
+    },
+    "contact": {
+      "type": "string"
+    },
+    "stage": {
+      "enum": [
+        "preprint",
+        "under-review",
+        "published"
+      ],
+      "description": "Articles only; default published"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "article"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "authors",
+          "venue"
+        ],
+        "not": {
+          "required": [
+            "status"
+          ]
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "project"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "status"
+        ],
+        "not": {
+          "required": [
+            "stage"
+          ]
+        }
+      }
+    }
+  ]
+}

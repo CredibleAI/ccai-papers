@@ -1,0 +1,15 @@
+type: article
+title: 'Your CLIP has 164 dimensions of noise: Exploring the embeddings covariance eigenspectrum of contrastively pretrained vision-language transformers'
+authors:
+- Jakub Grzywaczewski
+- Dawid Pludowski
+- Przemyslaw Biecek
+year: 2026
+venue: arXiv
+stage: preprint
+tags:
+- foundation-models
+- mechanistic-interpretability
+- computer-vision
+links:
+  preprint: https://arxiv.org/abs/2605.14893

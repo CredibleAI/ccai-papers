@@ -1,0 +1,15 @@
+type: article
+title: 'Model Science: Getting Serious About Verification, Explanation and Control of AI Systems'
+authors:
+- Przemyslaw Biecek
+- Wojciech Samek
+year: 2025
+venue: ECAI 2025
+stage: published
+tags:
+- xai
+- position-paper
+- ai-policy
+links:
+  paper: https://doi.org/10.3233/FAIA250784
+  preprint: https://arxiv.org/abs/2508.20040

@@ -1,0 +1,17 @@
+type: article
+title: 'LIMEcraft: handcrafted superpixel selection and inspection for Visual eXplanations'
+authors:
+- Weronika Hryniewska
+- Adrianna Grudzien
+- Przemyslaw Biecek
+year: 2024
+venue: Machine Learning
+stage: published
+tags:
+- xai
+- computer-vision
+summary: The increased interest in deep learning applications, and their hard-to-detect biases result in the need to validate and explain complex models. However, current explanation methods are limited as far as both the explanation of the reasoning process and prediction results are concerned. They usually only show the location in the image that was important for model prediction. The lack of possibility to interact with explanations makes it difficult to verify and understand exactly how the model works. This creates a significant risk when using the model. The risk is compounded by the fact that explanations do not take into account the semantic meaning of the explained objects. To escape from the trap of static and meaningless explanations, we propose a tool and a process called LIMEcraft. LIMEcraft enhances the process of explanation by allowing a user to interactively select semantically consistent areas and thoroughly examine the prediction for the image instance in case of many image features. Experiments on several models show that our tool improves model safety by inspecting model fairness for image pieces that may indicate model bias. 
+links:
+  paper: https://doi.org/10.1007/s10994-022-06204-w
+  preprint: https://arxiv.org/abs/2111.08094
+  github: http://github.com/MI2DataLab/LIMEcraft

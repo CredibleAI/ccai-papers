@@ -1,0 +1,14 @@
+type: article
+title: Towards Explainable Meta-learning
+authors:
+- Katarzyna Woznica
+- Przemyslaw Biecek
+year: 2021
+venue: ECML PKDD 2021 Workshops
+stage: published
+tags:
+- xai
+- automl
+summary: Meta-learning is a field that aims at discovering how different machine learning algorithms perform on a wide range of predictive tasks. Such knowledge speeds up the hyperparameter tuning or feature engineering. With the use of surrogate models, various aspects of the predictive task such as meta-features, landmarker models, etc., are used to predict expected performance. State-of-the-art approaches focus on searching for the best meta-model but do not explain how these different aspects contribute to its performance. However, to build a new generation of meta-models, we need a deeper understanding of the importance and effect of meta-features on model tunability. This paper proposes techniques developed for eXplainable Artificial Intelligence (XAI) to examine and extract knowledge from black-box surrogate models. To our knowledge, this is the first paper that shows how post-hoc explainability can be used to improve meta-learning.
+links:
+  paper: https://doi.org/10.1007/978-3-030-93736-2_38

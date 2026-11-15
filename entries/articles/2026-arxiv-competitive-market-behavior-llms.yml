@@ -1,0 +1,15 @@
+type: article
+title: Competitive Market Behavior of LLMs
+authors:
+- Pawel Struski
+- Jakub Swistak
+- Inez Okulska
+- Przemyslaw Biecek
+year: 2026
+venue: arXiv
+stage: preprint
+tags:
+- llm
+- foundation-models
+links:
+  preprint: https://arxiv.org/abs/2609.02580

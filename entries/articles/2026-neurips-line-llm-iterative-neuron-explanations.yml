@@ -1,0 +1,18 @@
+type: article
+title: 'LINE: LLM-based Iterative Neuron Explanations for Vision Models'
+authors:
+- Vladimir Zaigrajew
+- Michal Piechota
+- Gaspar Sekula
+- Przemyslaw Biecek
+year: 2026
+venue: NeurIPS 2026
+stage: published
+tags:
+- xai
+- foundation-models
+- llm
+- mechanistic-interpretability
+- computer-vision
+links:
+  preprint: https://arxiv.org/abs/2604.08039

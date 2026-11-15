@@ -1,0 +1,19 @@
+type: article
+title: 'dalex: Responsible Machine Learning with Interactive Explainability and Fairness in Python'
+authors:
+- Hubert Baniecki
+- Wojciech Kretowicz
+- Piotr Piatyszek
+- Jakub Wisniewski
+- Przemyslaw Biecek
+year: 2021
+venue: Journal of Machine Learning Research
+stage: published
+summary: In modern machine learning, we observe the phenomenon of opaqueness debt, which manifests itself by an increased risk of discrimination, lack of reproducibility, and deflated performance due to data drift. An increasing amount of available data and computing power results in the growing complexity of black-box predictive models. To manage these issues, good MLOps practice asks for better validation of model performance and fairness, higher explainability, and continuous monitoring. The necessity for deeper model transparency comes from both scientific and social domains and is also caused by emerging laws and regulations on artificial intelligence. To facilitate the responsible development of machine learning models, we introduce dalex, a Python package which implements a model-agnostic interface for interactive explainability and fairness. It adopts the design crafted through the development of various tools for explainable machine learning; thus, it aims at the unification of existing solutions. This library's source code and documentation are available under open license at https://python.drwhy.ai.
+tags:
+- xai
+- software
+- fairness
+links:
+  paper: https://jmlr.org/papers/v22/20-1473.html
+  preprint: https://arxiv.org/abs/2012.14406

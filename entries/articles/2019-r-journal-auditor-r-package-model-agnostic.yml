@@ -1,0 +1,19 @@
+type: article
+title: 'auditor: an R Package for Model-Agnostic Visual Validation and Diagnostics'
+authors:
+- Alicja Gosiewska
+- Przemyslaw Biecek
+year: 2019
+venue: The R Journal
+stage: published
+tags:
+- xai
+- software
+- r
+summary: Machine learning models have successfully been applied 
+  to challenges in applied in biology, medicine, finance, physics, 
+  and other fields. With modern software it is easy to train even 
+  a complex model that fits the training data and results in high accuracy on test set. However, problems often arise when models are confronted with the real-world data. This paper describes methodology and tools for model-agnostic auditing. It provides functinos for assessing and comparing the goodness of fit and performance of models. In addition, the package may be used for analysis of the similarity of residuals and for identification of outliers and influential observations. The examination is carried out by diagnostic scores and visual verification. The code presented in this paper are implemented in the auditor package. Its flexible and consistent grammar facilitates the validation models of a large class of models.
+links:
+  paper: https://doi.org/10.32614/rj-2019-036
+  preprint: https://arxiv.org/abs/1809.07763
