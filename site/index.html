@@ -94,9 +94,35 @@
     #tags { flex-wrap:nowrap; overflow-x:auto; margin:0 -16px 22px; padding:0 16px 6px; scrollbar-width:none; }
     #tags .chip { flex:none; }
   }
+
+  /* ── Password gate ── */
+  .gate { position:fixed; inset:0; z-index:100; display:flex; align-items:center; justify-content:center; padding:24px;
+          background:#888 url(assets/marble.jpg) center/cover; }
+  .gate[hidden] { display:none; }
+  .gate form { background:var(--white); padding:32px 32px 28px; width:100%; max-width:380px; }
+  .gate img { width:240px; display:block; margin-bottom:28px; }
+  .gate label { display:block; font:400 12px var(--mono); text-transform:uppercase; letter-spacing:.06em; color:var(--muted); margin-bottom:8px; }
+  .gate .row { display:flex; gap:8px; }
+  .gate input { flex:1; min-width:0; }
+  .gate button { font:400 13px var(--mono); text-transform:uppercase; letter-spacing:.05em; padding:0 16px; border:1px solid var(--black);
+                 background:var(--black); color:var(--white); cursor:pointer; border-radius:0; }
+  .gate button:hover { background:var(--charcoal); }
+  .gate .err { min-height:1.4em; margin:10px 0 0; font:400 12px var(--mono); color:#b00020; }
+  body.locked { overflow:hidden; }
 </style>
 </head>
-<body>
+<body class="locked">
+<div class="gate" id="gate">
+  <form id="gate-form" autocomplete="off">
+    <img src="assets/ccai-logo-horizontal.svg" alt="CCAI – Centre for Credible Artificial Intelligence">
+    <label for="gate-pw">Password</label>
+    <div class="row">
+      <input id="gate-pw" type="password" autofocus>
+      <button type="submit">Enter</button>
+    </div>
+    <p class="err" id="gate-err" role="alert"></p>
+  </form>
+</div>
 <nav class="nav">
   <div class="wrap">
     <a class="logo" href="./" aria-label="CCAI – Centre for Credible Artificial Intelligence"><img src="assets/ccai-logo-horizontal.svg" alt="CCAI – Centre for Credible Artificial Intelligence"></a>
@@ -241,6 +267,24 @@ document.addEventListener("click", e => {
 });
 ["q", "type", "year", "stage"].forEach(id => $(id).addEventListener("input", render));
 
+// ── Password gate (light protection only: hides the page from casual visitors) ──
+const PASS_SHA256 = "c81d516f5ea8e14a591ad98c9a7f3f447a9ba1711f1d08a9d7f5e3254cbc5dee"; // SHA-256 of the password
+const sha256 = async s => [...new Uint8Array(await crypto.subtle.digest("SHA-256", new TextEncoder().encode(s)))]
+  .map(b => b.toString(16).padStart(2, "0")).join("");
+let loaded = false;
+function unlock() {
+  $("gate").hidden = true; document.body.classList.remove("locked");
+  try { localStorage.setItem("ccai-papers-unlocked", PASS_SHA256); } catch (e) {}
+  if (!loaded) { loaded = true; loadData(); }
+}
+$("gate-form").addEventListener("submit", async e => {
+  e.preventDefault();
+  if (await sha256($("gate-pw").value) === PASS_SHA256) unlock();
+  else { $("gate-err").textContent = "Wrong password."; $("gate-pw").select(); }
+});
+try { if (localStorage.getItem("ccai-papers-unlocked") === PASS_SHA256) unlock(); } catch (e) {}
+
+function loadData() {
 fetch("data.json").then(r => r.json()).then(data => {
   DATA = data.map(d => ({ ...d,
     _title: norm(d.title), _summary: norm(d.summary), _venue: norm(d.venue),
@@ -256,6 +300,7 @@ fetch("data.json").then(r => r.json()).then(data => {
   (p.get("tags") || "").split(",").filter(Boolean).forEach(t => activeTags.add(t));
   render();
 }).catch(() => { $("results").innerHTML = "<p>Could not load data.json — run <code>python scripts/build.py</code>.</p>"; });
+}
 </script>
 </body>
 </html>
