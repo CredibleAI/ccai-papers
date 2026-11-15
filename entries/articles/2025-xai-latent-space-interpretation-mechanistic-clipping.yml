@@ -11,6 +11,29 @@ tags:
 - medical
 - foundation-models
 - mechanistic-interpretability
-summary: Electroencephalographic (EEG) recordings are often contaminated with artefacts, such as eye blinks, which complicate their analysis. While various methods exist to address, identify, and mitigate artefacts, many require human intervention. This study introduces a novel, self-supervised, fully automated approach for identifying and reducing artefacts in EEG signals using a Variational Autoencoder (VAE) architecture. In detail, subject-specific VAEs, with convolutional layers, are trained from spatially preserved EEG topographic maps. A sample-wise strategy based on the negative log-likelihood of activated latent vectors from training data is proposed to identify anomalous topomaps. This assigns an anomaly score to each model’s input. The vectors of input topomaps above a chosen threshold are automatically clipped with a percentile-based approach of activated latent space components. Eventually, the reconstructed EEG signals are compared with a baseline built upon an offline ICA method with automatic detection of artefactual components inspired by the FASTER methodology. Results show that the signal-to-noise ratio (SNR) and the peak signal-to-noise ratio (PSNR) of the FP1, FP2, and other channels were higher, while the remaining channels were similar to ICA Fast. Similarly, mean absolute error (MAE), normalised root mean square error (NRMSE), and correlation coefficients indicated comparable signals from both methods. In addition, findings demonstrate the method’s strength in avoiding signal updates in non-artefactual segments, preserving their neural dynamics. The contribution to the body of knowledge is a fully automated, subject-specific method for identifying and denoising EEG signals.
+summary: >-
+  Electroencephalographic (EEG) recordings are often contaminated with
+  artefacts, such as eye blinks, which complicate their analysis. While various
+  methods exist to address, identify, and mitigate artefacts, many require human
+  intervention. This study introduces a novel, self-supervised, fully automated
+  approach for identifying and reducing artefacts in EEG signals using a
+  Variational Autoencoder (VAE) architecture. In detail, subject-specific VAEs,
+  with convolutional layers, are trained from spatially preserved EEG
+  topographic maps. A sample-wise strategy based on the negative log-likelihood
+  of activated latent vectors from training data is proposed to identify
+  anomalous topomaps. This assigns an anomaly score to each model’s input. The
+  vectors of input topomaps above a chosen threshold are automatically clipped
+  with a percentile-based approach of activated latent space components.
+  Eventually, the reconstructed EEG signals are compared with a baseline built
+  upon an offline ICA method with automatic detection of artefactual components
+  inspired by the FASTER methodology. Results show that the signal-to-noise
+  ratio (SNR) and the peak signal-to-noise ratio (PSNR) of the FP1, FP2, and
+  other channels were higher, while the remaining channels were similar to ICA
+  Fast. Similarly, mean absolute error (MAE), normalised root mean square error
+  (NRMSE), and correlation coefficients indicated comparable signals from both
+  methods. In addition, findings demonstrate the method’s strength in avoiding
+  signal updates in non-artefactual segments, preserving their neural dynamics.
+  The contribution to the body of knowledge is a fully automated,
+  subject-specific method for identifying and denoising EEG signals.
 links:
   paper: https://doi.org/10.1007/978-3-032-08327-2_16

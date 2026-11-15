@@ -14,6 +14,16 @@ venue: ISD 2025
 stage: published
 tags:
 - medical
-summary: We present a process of transforming medical data into a system that supports radiologists' interpretation and understanding of Computed Tomography (CT) images. The system is based on a pipeline that includes image conversion, organ segmentation, feature extraction, and report rendering. The final report presents organ visualisations and information about organ measurements, with marked outliers, to the radiologist. The system was created using data from the database containing over 40,000 CT scans and a pre-trained Swin UNETR architecture. The system obtained 89.09\% DICE for five segmented organs. The created solution can go through the process in less than five and a half minutes, and its usability was confirmed by radiologists.
+summary: >-
+  We present a process of transforming medical data into a system that supports
+  radiologists' interpretation and understanding of Computed Tomography (CT)
+  images. The system is based on a pipeline that includes image conversion,
+  organ segmentation, feature extraction, and report rendering. The final report
+  presents organ visualisations and information about organ measurements, with
+  marked outliers, to the radiologist. The system was created using data from
+  the database containing over 40,000 CT scans and a pre-trained Swin UNETR
+  architecture. The system obtained 89.09\% DICE for five segmented organs. The
+  created solution can go through the process in less than five and a half
+  minutes, and its usability was confirmed by radiologists.
 links:
   paper: https://doi.org/10.62036/ISD.2025.112

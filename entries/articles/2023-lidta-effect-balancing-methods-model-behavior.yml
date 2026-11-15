@@ -7,7 +7,25 @@ authors:
 year: 2023
 venue: Fifth International Workshop on Learning with Imbalanced Domains
 stage: published
-summary: Imbalanced data poses a significant challenge in classification as model performance is af- fected by insufficient learning from minority classes. Balancing methods are often used to address this problem. However, such techniques can lead to problems such as overfitting or loss of information. This study addresses a more challenging aspect of balancing methods - their impact on model behavior. To capture these changes, Explainable Artificial Intel- ligence tools are used to compare models trained on datasets before and after balancing. In addition to the Variable Importance method, this study uses Partial Dependence and Accumulated Local Effects profiles. Real and simulated datasets are tested, and an open- source Python package edgaro is developed to facilitate this analysis. The results obtained show significant changes in model behavior due to balancing methods, which can lead to biased models toward a balanced distribution. These findings confirm that balancing analysis should go beyond model performance comparisons to achieve higher reliability of machine learning models. Therefore, we propose a new method performance gain plot for informed data balancing strategy to make an optimal selection of balancing method by analyzing the measure of change in model behavior versus performance gain.
+summary: >-
+  Imbalanced data poses a significant challenge in classification as model
+  performance is af- fected by insufficient learning from minority classes.
+  Balancing methods are often used to address this problem. However, such
+  techniques can lead to problems such as overfitting or loss of information.
+  This study addresses a more challenging aspect of balancing methods - their
+  impact on model behavior. To capture these changes, Explainable Artificial
+  Intel- ligence tools are used to compare models trained on datasets before and
+  after balancing. In addition to the Variable Importance method, this study
+  uses Partial Dependence and Accumulated Local Effects profiles. Real and
+  simulated datasets are tested, and an open- source Python package edgaro is
+  developed to facilitate this analysis. The results obtained show significant
+  changes in model behavior due to balancing methods, which can lead to biased
+  models toward a balanced distribution. These findings confirm that balancing
+  analysis should go beyond model performance comparisons to achieve higher
+  reliability of machine learning models. Therefore, we propose a new method
+  performance gain plot for informed data balancing strategy to make an optimal
+  selection of balancing method by analyzing the measure of change in model
+  behavior versus performance gain.
 tags:
 - tabular-data
 links:

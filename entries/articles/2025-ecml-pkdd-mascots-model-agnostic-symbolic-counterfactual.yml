@@ -15,7 +15,25 @@ tags:
 - xai
 - counterfactuals
 - time-series
-summary: Counterfactual explanations provide an intuitive way to understand model decisions by identifying minimal changes required to alter an outcome. However, applying counterfactual methods to time series models remains challenging due to temporal dependencies, high dimensionality, and the lack of an intuitive human-interpretable representation. We introduce MASCOTS, a method that leverages the Bag-of-Receptive-Fields representation alongside symbolic transformations inspired by Symbolic Aggregate Approximation. By operating in a symbolic feature space, it enhances interpretability while preserving fidelity to the original data and model. Unlike existing approaches that either depend on model structure or autoencoder-based sampling, MASCOTS directly generates meaningful and diverse counterfactual observations in a model-agnostic manner, operating on both univariate and multivariate data. We evaluate MASCOTS on univariate and multivariate benchmark datasets, demonstrating comparable validity, proximity, and plausibility to state-of-the-art methods, while significantly improving interpretability and sparsity. Its symbolic nature allows for explanations that can be expressed visually, in natural language, or through semantic representations, making counterfactual reasoning more accessible and actionable.
+summary: >-
+  Counterfactual explanations provide an intuitive way to understand model
+  decisions by identifying minimal changes required to alter an outcome.
+  However, applying counterfactual methods to time series models remains
+  challenging due to temporal dependencies, high dimensionality, and the lack of
+  an intuitive human-interpretable representation. We introduce MASCOTS, a
+  method that leverages the Bag-of-Receptive-Fields representation alongside
+  symbolic transformations inspired by Symbolic Aggregate Approximation. By
+  operating in a symbolic feature space, it enhances interpretability while
+  preserving fidelity to the original data and model. Unlike existing approaches
+  that either depend on model structure or autoencoder-based sampling, MASCOTS
+  directly generates meaningful and diverse counterfactual observations in a
+  model-agnostic manner, operating on both univariate and multivariate data. We
+  evaluate MASCOTS on univariate and multivariate benchmark datasets,
+  demonstrating comparable validity, proximity, and plausibility to
+  state-of-the-art methods, while significantly improving interpretability and
+  sparsity. Its symbolic nature allows for explanations that can be expressed
+  visually, in natural language, or through semantic representations, making
+  counterfactual reasoning more accessible and actionable.
 links:
   paper: https://doi.org/10.1007/978-3-032-06078-5_6
   preprint: https://arxiv.org/abs/2503.22389

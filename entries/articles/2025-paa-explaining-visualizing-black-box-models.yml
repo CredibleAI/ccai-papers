@@ -12,7 +12,17 @@ stage: published
 tags:
 - xai
 - counterfactuals
-summary: Explainable AI (XAI) is an increasingly important area of machine learning research, which aims to make black-box models transparent and interpretable. In this paper, we propose a novel approach to XAI that uses the so-called counterfactual paths for model-agnostic global explanations. The algorithm measures feature importance by identifying sequential permutations of features that most influence changes in model predictions. It is particularly suitable for generating explanations based on counterfactual paths in knowledge graphs incorporating domain knowledge. Counterfactual paths introduce an additional graph dimension to current XAI methods in both explaining and visualizing black-box models. 
+summary: >-
+  Explainable AI (XAI) is an increasingly important area of machine learning
+  research, which aims to make black-box models transparent and interpretable.
+  In this paper, we propose a novel approach to XAI that uses the so-called
+  counterfactual paths for model-agnostic global explanations. The algorithm
+  measures feature importance by identifying sequential permutations of features
+  that most influence changes in model predictions. It is particularly suitable
+  for generating explanations based on counterfactual paths in knowledge graphs
+  incorporating domain knowledge. Counterfactual paths introduce an additional
+  graph dimension to current XAI methods in both explaining and visualizing
+  black-box models.
 links:
   paper: https://doi.org/10.1007/s10044-025-01532-8
   preprint: https://arxiv.org/abs/2307.07764

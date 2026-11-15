@@ -10,7 +10,22 @@ venue: xAI 2025
 stage: published
 tags:
 - machine-learning
-summary: Despite their critical applications in healthcare, particularly in digital pathology, Multiple Instance Learning (MIL) models have been poorly investigated with regard to their properties, vulnerabilities, and reasoning. To address this research gap, we propose rule-based synthetic datasets SyntheticSMIL, and ReasonSMIL protocol, for the investigation of the attention-based MIL models. The datasets are generated on a rule basis to enable easy manipulation of their difficulty level. Moreover, they are designed in such a way that the model has to pay attention to multiple locations within the images to perform correct classification (spatial context). 
-  The ReasonSMIL consists of two parts (1) ReasonSMIL-R, which checks if models reason according to ground truth and (2) ReasonSMIL-A, which measures the agreement between models trained on different subsets (stability). We used the proposed SyntheticSMIL and ReasonSMIL to analyse CLAM and TransMIL models. These tools offer a novel way to address the challenges of investigating model properties without relying on expert knowledge, as the ground truth is given during the dataset generation.
+summary: >-
+  Despite their critical applications in healthcare, particularly in digital
+  pathology, Multiple Instance Learning (MIL) models have been poorly
+  investigated with regard to their properties, vulnerabilities, and reasoning.
+  To address this research gap, we propose rule-based synthetic datasets
+  SyntheticSMIL, and ReasonSMIL protocol, for the investigation of the
+  attention-based MIL models. The datasets are generated on a rule basis to
+  enable easy manipulation of their difficulty level. Moreover, they are
+  designed in such a way that the model has to pay attention to multiple
+  locations within the images to perform correct classification (spatial
+  context). The ReasonSMIL consists of two parts (1) ReasonSMIL-R, which checks
+  if models reason according to ground truth and (2) ReasonSMIL-A, which
+  measures the agreement between models trained on different subsets
+  (stability). We used the proposed SyntheticSMIL and ReasonSMIL to analyse CLAM
+  and TransMIL models. These tools offer a novel way to address the challenges
+  of investigating model properties without relying on expert knowledge, as the
+  ground truth is given during the dataset generation.
 links:
   paper: https://doi.org/10.1007/978-3-032-08327-2_13

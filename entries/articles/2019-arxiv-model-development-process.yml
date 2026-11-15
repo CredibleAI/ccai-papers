@@ -5,8 +5,18 @@ authors:
 year: 2019
 venue: arXiv
 stage: preprint
-summary: Predictive modeling has an increasing number of applications 
-  in various fields. High demand for predictive models drives creation of tools that automate and support work of data scientist on the model development. To better understand what can be automated we need first a description of the model life-cycle. In this paper we propose a generic Model Development Process (MDP). This process is inspired by Rational Unified Process (RUP) which was designed for software development. There are other approached to process description, like CRISP DM or ASUM DM, in this paper we discuss similarities and differences between these methodologies. We believe that the proposed open standard for model development will facilitate creation of tools for automation of model training, testing and maintaining.
+summary: >-
+  Predictive modeling has an increasing number of applications in various
+  fields. High demand for predictive models drives creation of tools that
+  automate and support work of data scientist on the model development. To
+  better understand what can be automated we need first a description of the
+  model life-cycle. In this paper we propose a generic Model Development Process
+  (MDP). This process is inspired by Rational Unified Process (RUP) which was
+  designed for software development. There are other approached to process
+  description, like CRISP DM or ASUM DM, in this paper we discuss similarities
+  and differences between these methodologies. We believe that the proposed open
+  standard for model development will facilitate creation of tools for
+  automation of model training, testing and maintaining.
 tags:
 - machine-learning
 - methodology

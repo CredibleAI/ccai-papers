@@ -10,7 +10,21 @@ stage: published
 tags:
 - xai
 - automl
-summary: Benchmarks are an integral part of machine learning development. However, the most common benchmarks share several limitations. For example, the difference in performance between two models has no probabilistic interpretation, it makes no sense to compare such differences between data sets and there is no reference point that indicates a significant performance improvement. Here we introduce an Elo-based predictive power meta-score that is built on other performance measures and allows for interpretable comparisons of models. Differences between this score have a probabilistic interpretation and can be compared directly between data sets. Furthermore, this meta-score allows for an assessment of ranking fitness. We prove the properties of the Elo-based predictive power meta-score and support them with empirical results on a large-scale benchmark of 30 classification data sets. Additionally, we propose a unified benchmark ontology that provides a uniform description of benchmarks.
+summary: >-
+  Benchmarks are an integral part of machine learning development. However, the
+  most common benchmarks share several limitations. For example, the difference
+  in performance between two models has no probabilistic interpretation, it
+  makes no sense to compare such differences between data sets and there is no
+  reference point that indicates a significant performance improvement. Here we
+  introduce an Elo-based predictive power meta-score that is built on other
+  performance measures and allows for interpretable comparisons of models.
+  Differences between this score have a probabilistic interpretation and can be
+  compared directly between data sets. Furthermore, this meta-score allows for
+  an assessment of ranking fitness. We prove the properties of the Elo-based
+  predictive power meta-score and support them with empirical results on a
+  large-scale benchmark of 30 classification data sets. Additionally, we propose
+  a unified benchmark ontology that provides a uniform description of
+  benchmarks.
 links:
   paper: https://doi.org/10.1038/s42256-022-00531-2
   preprint: https://arxiv.org/abs/2006.02293

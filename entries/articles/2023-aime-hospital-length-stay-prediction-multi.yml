@@ -9,9 +9,20 @@ authors:
 year: 2023
 venue: AIME 2023
 stage: published
-summary: To what extent can the patient’s length of stay in a hospital 
-  be predicted using only an X-ray image? We answer this question by 
-  comparing the performance of machine learning survival models on a novel multi-modal dataset created from 1235 images with textual radiology reports annotated by humans. Although black-box models predict better on average than interpretable ones, like Cox proportional hazards, they are not inherently understandable. To overcome this trust issue, we introduce time-dependent model explanations into the human-AI decision making process. Explaining models built on both human-annotated and algorithm-extracted radiomics features provides valuable insights for physicians working in a hospital. We believe the presented approach to be general and widely applicable to other time-to-event medical use cases. For reproducibility, we open-source code and the tlos dataset at https://github.com/mi2datalab/xlungs-trustworthy-los-prediction.
+summary: >-
+  To what extent can the patient’s length of stay in a hospital be predicted
+  using only an X-ray image? We answer this question by comparing the
+  performance of machine learning survival models on a novel multi-modal dataset
+  created from 1235 images with textual radiology reports annotated by humans.
+  Although black-box models predict better on average than interpretable ones,
+  like Cox proportional hazards, they are not inherently understandable. To
+  overcome this trust issue, we introduce time-dependent model explanations into
+  the human-AI decision making process. Explaining models built on both
+  human-annotated and algorithm-extracted radiomics features provides valuable
+  insights for physicians working in a hospital. We believe the presented
+  approach to be general and widely applicable to other time-to-event medical
+  use cases. For reproducibility, we open-source code and the tlos dataset at
+  https://github.com/mi2datalab/xlungs-trustworthy-los-prediction.
 tags:
 - medical
 links:

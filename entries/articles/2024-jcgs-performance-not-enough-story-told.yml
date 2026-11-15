@@ -11,7 +11,18 @@ stage: published
 tags:
 - rashomon
 - position-paper
-summary: The usual goal of supervised learning is to find the best model, the one that optimizes a particular performance measure. However, what if the explanation provided by this model is completely different from another model and different again from another model despite all having similarly good fit statistics? Is it possible that the equally effective models put the spotlight on different relationships in the data? Inspired by Anscombe’s quartet, this article introduces a Rashomon Quartet, that is a set of four models built on a synthetic dataset which have practically identical predictive performance. However, the visual exploration reveals distinct explanations of the relations in the data. This illustrative example aims to encourage the use of methods for model visualization to compare predictive models beyond their performance.
+summary: >-
+  The usual goal of supervised learning is to find the best model, the one that
+  optimizes a particular performance measure. However, what if the explanation
+  provided by this model is completely different from another model and
+  different again from another model despite all having similarly good fit
+  statistics? Is it possible that the equally effective models put the spotlight
+  on different relationships in the data? Inspired by Anscombe’s quartet, this
+  article introduces a Rashomon Quartet, that is a set of four models built on a
+  synthetic dataset which have practically identical predictive performance.
+  However, the visual exploration reveals distinct explanations of the relations
+  in the data. This illustrative example aims to encourage the use of methods
+  for model visualization to compare predictive models beyond their performance.
 links:
   paper: https://doi.org/10.1080/10618600.2024.2344616
   preprint: https://arxiv.org/abs/2302.13356

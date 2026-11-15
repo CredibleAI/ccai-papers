@@ -8,9 +8,20 @@ authors:
 year: 2019
 venue: ICONIP 2019
 stage: published
-summary: Natural Language Processing models lack a unified approach 
-  to robustness testing. In this paper we introduce WildNLP - 
-  a framework for testing model stability in a natural setting where text corruptions such as keyboard errors or misspelling occur. We compare robustness of deep learning models from 4 popular NLP tasks, Q&A, NLI, NER and Sentiment Analysis by testing their performance on aspects introduced in the framework. In particular, we focus on a comparison between recent state-of-the-art text representations and non-contextualized word embeddings. In order to improve robustness, we perform adversarial training on selected aspects and check its transferability to the improvement of models with various corruption types. We find that the high performance of models does not ensure sufficient robustness, although modern embedding techniques help to improve it. We release the code of WildNLP framework for the community.
+summary: >-
+  Natural Language Processing models lack a unified approach to robustness
+  testing. In this paper we introduce WildNLP - a framework for testing model
+  stability in a natural setting where text corruptions such as keyboard errors
+  or misspelling occur. We compare robustness of deep learning models from 4
+  popular NLP tasks, Q&A, NLI, NER and Sentiment Analysis by testing their
+  performance on aspects introduced in the framework. In particular, we focus on
+  a comparison between recent state-of-the-art text representations and
+  non-contextualized word embeddings. In order to improve robustness, we perform
+  adversarial training on selected aspects and check its transferability to the
+  improvement of models with various corruption types. We find that the high
+  performance of models does not ensure sufficient robustness, although modern
+  embedding techniques help to improve it. We release the code of WildNLP
+  framework for the community.
 tags:
 - robustness
 - nlp

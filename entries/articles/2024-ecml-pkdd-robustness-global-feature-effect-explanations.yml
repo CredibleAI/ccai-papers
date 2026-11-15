@@ -8,7 +8,16 @@ authors:
 year: 2024
 venue: ECML PKDD 2024
 stage: published
-summary: We study the robustness of global post-hoc explanations for predictive models trained on tabular data. Effects of predictor features in black-box supervised learning are an essential diagnostic tool for model debugging and scientific discovery in applied sciences. However, how vulnerable they are to data and model perturbations remains an open research question. We introduce several theoretical bounds for evaluating the robustness of partial dependence plots and accumulated local effects. Our experimental results with synthetic and real-world datasets quantify the gap between the best and worst-case scenarios of (mis)interpreting machine learning predictions globally.
+summary: >-
+  We study the robustness of global post-hoc explanations for predictive models
+  trained on tabular data. Effects of predictor features in black-box supervised
+  learning are an essential diagnostic tool for model debugging and scientific
+  discovery in applied sciences. However, how vulnerable they are to data and
+  model perturbations remains an open research question. We introduce several
+  theoretical bounds for evaluating the robustness of partial dependence plots
+  and accumulated local effects. Our experimental results with synthetic and
+  real-world datasets quantify the gap between the best and worst-case scenarios
+  of (mis)interpreting machine learning predictions globally.
 tags:
 - xai
 - robustness

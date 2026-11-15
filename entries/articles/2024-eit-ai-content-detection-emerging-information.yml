@@ -18,8 +18,30 @@ authors:
 - Virginia Morini
 - Stuart Russell
 - Yoshua Bengio
-summary: The world is about to be swamped by an unprecedented wave of AI-generated content. We need reliable ways of identifying such content, to supplement the many existing social institutions that enable trust between people and organisations and ensure social resilience. In this paper, we begin by highlighting an important new development 
-  providers of AI content generators have new obligations to support the creation of reliable detectors for the content they generate. These new obligations arise mainly from the EU’s newly finalised AI Act, but they are enhanced by the US President’s recent Executive Order on AI, and by several considerations of self-interest. These new steps towards reliable detection mechanisms are by no means a panacea—but we argue they will usher in a new adversarial landscape, in which reliable methods for identifying AI-generated content are commonly available. In this landscape, many new questions arise for policymakers. Firstly, if reliable AI-content detection mechanisms are available, who should be required to use them? And how should they be used? We argue that new duties arise for media and Web search companies arise for media companies, and for Web search companies, in the deployment of AI-content detectors. Secondly, what broader regulation of the tech ecosystem will maximise the likelihood of reliable AI-content detectors? We argue for a range of new duties, relating to provenance-authentication protocols, open-source AI generators, and support for research and enforcement. Along the way, we consider how the production of AI-generated content relates to ‘free expression’, and discuss the important case of content that is generated jointly by humans and AIs.
+summary: >-
+  The world is about to be swamped by an unprecedented wave of AI-generated
+  content. We need reliable ways of identifying such content, to supplement the
+  many existing social institutions that enable trust between people and
+  organisations and ensure social resilience. In this paper, we begin by
+  highlighting an important new development providers of AI content generators
+  have new obligations to support the creation of reliable detectors for the
+  content they generate. These new obligations arise mainly from the EU’s newly
+  finalised AI Act, but they are enhanced by the US President’s recent Executive
+  Order on AI, and by several considerations of self-interest. These new steps
+  towards reliable detection mechanisms are by no means a panacea—but we argue
+  they will usher in a new adversarial landscape, in which reliable methods for
+  identifying AI-generated content are commonly available. In this landscape,
+  many new questions arise for policymakers. Firstly, if reliable AI-content
+  detection mechanisms are available, who should be required to use them? And
+  how should they be used? We argue that new duties arise for media and Web
+  search companies arise for media companies, and for Web search companies, in
+  the deployment of AI-content detectors. Secondly, what broader regulation of
+  the tech ecosystem will maximise the likelihood of reliable AI-content
+  detectors? We argue for a range of new duties, relating to
+  provenance-authentication protocols, open-source AI generators, and support
+  for research and enforcement. Along the way, we consider how the production of
+  AI-generated content relates to ‘free expression’, and discuss the important
+  case of content that is generated jointly by humans and AIs.
 year: 2024
 venue: Ethics and Information Technology
 stage: published

@@ -11,7 +11,25 @@ authors:
 year: 2026
 venue: ECCV 2026
 stage: published
-summary: Concept Bottleneck Models (CBMs) are a class of interpretable AI models that enable concept-level control over the decision-making process, allowing humans to directly intervene in model predictions. As a result, CBMs have been widely adopted in tasks requiring interpretability and controllability. Existing research has demonstrated that human-model interaction can significantly enhance CBM performance. However, in practical applications, each intervention requires manual human effort and explicit data provision. Therefore, a central challenge is how to improve model performance while minimizing intervention effort. In this paper, we show that trained CBM parameters encode usable concept-correlation structure. We leverage this structure during interaction by propagating user feedback through the shared input-to-concept pathway, thereby adjusting non-intervened concepts without training an additional realignment model. Experimental results demonstrate that our method improves low-intervention performance across multiple models and datasets. Compared with all tested baselines, our approach improves early-intervention performance by approximately 9%; compared with Concept Realignment, it improves AUC@10 and AUC@20 by 3.90% and 2.88%, respectively, while avoiding extra training. 
+summary: >-
+  Concept Bottleneck Models (CBMs) are a class of interpretable AI models that
+  enable concept-level control over the decision-making process, allowing humans
+  to directly intervene in model predictions. As a result, CBMs have been widely
+  adopted in tasks requiring interpretability and controllability. Existing
+  research has demonstrated that human-model interaction can significantly
+  enhance CBM performance. However, in practical applications, each intervention
+  requires manual human effort and explicit data provision. Therefore, a central
+  challenge is how to improve model performance while minimizing intervention
+  effort. In this paper, we show that trained CBM parameters encode usable
+  concept-correlation structure. We leverage this structure during interaction
+  by propagating user feedback through the shared input-to-concept pathway,
+  thereby adjusting non-intervened concepts without training an additional
+  realignment model. Experimental results demonstrate that our method improves
+  low-intervention performance across multiple models and datasets. Compared
+  with all tested baselines, our approach improves early-intervention
+  performance by approximately 9%; compared with Concept Realignment, it
+  improves AUC@10 and AUC@20 by 3.90% and 2.88%, respectively, while avoiding
+  extra training.
 tags:
 - xai
 - concept-bottleneck

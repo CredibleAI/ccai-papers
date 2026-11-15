@@ -10,7 +10,21 @@ stage: published
 tags:
 - xai
 - sports-analytics
-summary: The expected goal models have gained popularity, but their interpretability is often limited, especially when trained using black-box methods. Explainable artificial intelligence tools have emerged to enhance model transparency and extract descriptive knowledge for a single observation or all observations. However, explaining black-box models for specific observations may be more useful in some domains. This paper introduces the glocal explanations (between local and global levels) of the expected goal models to enable performance analysis at the team and player levels by proposing aggregated versions of the SHAP values and partial dependence profiles. This allows knowledge to be extracted from the expected goal model for a player or team rather than just a single shot. In addition, we conducted real-data applications to illustrate the usefulness of aggregated SHAP and aggregated profiles. The paper concludes with remarks on the potential of these explanations for performance analysis in football analytics.
+summary: >-
+  The expected goal models have gained popularity, but their interpretability is
+  often limited, especially when trained using black-box methods. Explainable
+  artificial intelligence tools have emerged to enhance model transparency and
+  extract descriptive knowledge for a single observation or all observations.
+  However, explaining black-box models for specific observations may be more
+  useful in some domains. This paper introduces the glocal explanations (between
+  local and global levels) of the expected goal models to enable performance
+  analysis at the team and player levels by proposing aggregated versions of the
+  SHAP values and partial dependence profiles. This allows knowledge to be
+  extracted from the expected goal model for a player or team rather than just a
+  single shot. In addition, we conducted real-data applications to illustrate
+  the usefulness of aggregated SHAP and aggregated profiles. The paper concludes
+  with remarks on the potential of these explanations for performance analysis
+  in football analytics.
 links:
   paper: https://doi.org/10.1007/978-3-032-08333-3_1
   preprint: https://arxiv.org/abs/2308.15559

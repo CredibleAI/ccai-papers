@@ -10,8 +10,19 @@ tags:
 - software
 - r
 - survey
-summary: The increasing availability of large but noisy data sets with a large number of heterogeneous variables leads to the increasing interest in the automation of common tasks for data analysis. The most time-consuming part of this process is the Exploratory Data Analysis, crucial for better domain understanding, data cleaning, data validation, and feature engineering.
-  There is a growing number of libraries that attempt to automate some of the typical Exploratory Data Analysis tasks to make the search for new insights easier and faster. In this paper, we present a systematic review of existing tools for Automated Exploratory Data Analysis (autoEDA). We explore the features of fifteen popular R packages to identify the parts of analysis that can be effectively automated with the current tools and to point out new directions for further autoEDA development.
+summary: >-
+  The increasing availability of large but noisy data sets with a large number
+  of heterogeneous variables leads to the increasing interest in the automation
+  of common tasks for data analysis. The most time-consuming part of this
+  process is the Exploratory Data Analysis, crucial for better domain
+  understanding, data cleaning, data validation, and feature engineering. There
+  is a growing number of libraries that attempt to automate some of the typical
+  Exploratory Data Analysis tasks to make the search for new insights easier and
+  faster. In this paper, we present a systematic review of existing tools for
+  Automated Exploratory Data Analysis (autoEDA). We explore the features of
+  fifteen popular R packages to identify the parts of analysis that can be
+  effectively automated with the current tools and to point out new directions
+  for further autoEDA development.
 links:
   paper: https://doi.org/10.32614/rj-2019-033
   preprint: https://arxiv.org/abs/1904.02101

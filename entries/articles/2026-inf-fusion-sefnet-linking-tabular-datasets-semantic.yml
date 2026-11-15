@@ -9,6 +9,25 @@ venue: Information Fusion
 stage: published
 tags:
 - tabular-data
-summary: Tabular datasets play a significant role in wide range of machine learning applications. However, although they often address similar problems, tabular datasets are typically treated as standalone tasks. The opportunities of using previously solved problems are limited due to the lack of structured contextual information about their features and the lack of understanding of the relations between them. To overcome this limitation, we propose a new methodology called Semantic Feature Net (SeFNet), capturing the semantic meaning of the analyzed tabular features. By leveraging existing ontologies and domain knowledge, SeFNet opens up new opportunities for sharing insights between diverse predictive tasks. One such opportunity is the Dataset Ontology-based Semantic Similarity (DOSS) measure, which quantifies the similarity between datasets using relations across their features. In this paper, we present an example of SeFNet’s application prepared for a collection of predictive tasks in healthcare, with the features’ relations derived from the SNOMED-CT ontology. The proposed SeFNet methodology and the accompanying DOSS measure address the issue of limited contextual information in tabular datasets. By incorporating domain knowledge and establishing semantic relations between features, we enhance the potential for meta-learning and enable valuable insights to be shared across different predictive tasks.
+summary: >-
+  Tabular datasets play a significant role in wide range of machine learning
+  applications. However, although they often address similar problems, tabular
+  datasets are typically treated as standalone tasks. The opportunities of using
+  previously solved problems are limited due to the lack of structured
+  contextual information about their features and the lack of understanding of
+  the relations between them. To overcome this limitation, we propose a new
+  methodology called Semantic Feature Net (SeFNet), capturing the semantic
+  meaning of the analyzed tabular features. By leveraging existing ontologies
+  and domain knowledge, SeFNet opens up new opportunities for sharing insights
+  between diverse predictive tasks. One such opportunity is the Dataset
+  Ontology-based Semantic Similarity (DOSS) measure, which quantifies the
+  similarity between datasets using relations across their features. In this
+  paper, we present an example of SeFNet’s application prepared for a collection
+  of predictive tasks in healthcare, with the features’ relations derived from
+  the SNOMED-CT ontology. The proposed SeFNet methodology and the accompanying
+  DOSS measure address the issue of limited contextual information in tabular
+  datasets. By incorporating domain knowledge and establishing semantic
+  relations between features, we enhance the potential for meta-learning and
+  enable valuable insights to be shared across different predictive tasks.
 links:
   paper: https://doi.org/10.1016/j.inffus.2025.103436

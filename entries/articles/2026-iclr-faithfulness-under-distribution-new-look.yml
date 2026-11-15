@@ -10,7 +10,18 @@ authors:
 - Jianlong Zhou
 year: 2026
 venue: ICLR 2026
-summary: Evaluating the faithfulness of attribution methods remains an open challenge. Standard metrics such as Insertion and Deletion Scores rely on heuristic input perturbations (e.g., zeroing pixels), which often push samples out of the data distribution (OOD). This can distort model behavior and lead to unreliable evaluations. We propose FUD, a novel evaluation framework that reconstructs masked regions using score-based diffusion models to produce in-distribution, semantically coherent inputs. This distribution-aware approach avoids the common pitfalls of existing Attribution Evaluation Methods (AEMs) and yields assessments that more accurately reflect attribution faithfulness. Experiments across models show that FUD produces significantly different—and more reliable—judgments than prior approaches. 
+summary: >-
+  Evaluating the faithfulness of attribution methods remains an open challenge.
+  Standard metrics such as Insertion and Deletion Scores rely on heuristic input
+  perturbations (e.g., zeroing pixels), which often push samples out of the data
+  distribution (OOD). This can distort model behavior and lead to unreliable
+  evaluations. We propose FUD, a novel evaluation framework that reconstructs
+  masked regions using score-based diffusion models to produce in-distribution,
+  semantically coherent inputs. This distribution-aware approach avoids the
+  common pitfalls of existing Attribution Evaluation Methods (AEMs) and yields
+  assessments that more accurately reflect attribution faithfulness. Experiments
+  across models show that FUD produces significantly different—and more
+  reliable—judgments than prior approaches.
 stage: published
 tags:
 - xai

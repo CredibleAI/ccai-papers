@@ -11,7 +11,23 @@ stage: published
 tags:
 - xai
 - survival-analysis
-summary: Machine and deep learning survival models demonstrate similar or even improved time-to-event prediction capabilities compared to classical statistical learning methods yet are too complex to be interpreted by humans. Several model-agnostic explanations are available to overcome this issue; however, none directly explain the survival function prediction. In this paper, we introduce SurvSHAP(t), the first time-dependent explanation that allows for interpreting survival black-box models. It is based on SHapley Additive exPlanations with solid theoretical foundations and a broad adoption among machine learning practitioners. The proposed methods aim to enhance precision diagnostics and support domain experts in making decisions. Experiments on synthetic and medical data confirm that SurvSHAP(t) can detect variables with a time-dependent effect, and its aggregation is a better determinant of the importance of variables for a prediction than SurvLIME. SurvSHAP(t) is model-agnostic and can be applied to all models with functional output. We provide an accessible implementation of time-dependent explanations in Python at https://github.com/MI2DataLab/survshap.
+summary: >-
+  Machine and deep learning survival models demonstrate similar or even improved
+  time-to-event prediction capabilities compared to classical statistical
+  learning methods yet are too complex to be interpreted by humans. Several
+  model-agnostic explanations are available to overcome this issue; however,
+  none directly explain the survival function prediction. In this paper, we
+  introduce SurvSHAP(t), the first time-dependent explanation that allows for
+  interpreting survival black-box models. It is based on SHapley Additive
+  exPlanations with solid theoretical foundations and a broad adoption among
+  machine learning practitioners. The proposed methods aim to enhance precision
+  diagnostics and support domain experts in making decisions. Experiments on
+  synthetic and medical data confirm that SurvSHAP(t) can detect variables with
+  a time-dependent effect, and its aggregation is a better determinant of the
+  importance of variables for a prediction than SurvLIME. SurvSHAP(t) is
+  model-agnostic and can be applied to all models with functional output. We
+  provide an accessible implementation of time-dependent explanations in Python
+  at https://github.com/MI2DataLab/survshap.
 links:
   paper: https://doi.org/10.1016/j.knosys.2022.110234
   preprint: https://arxiv.org/abs/2208.11080

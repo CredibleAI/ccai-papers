@@ -9,9 +9,15 @@ authors:
 year: 2019
 venue: CoNLL 2019
 stage: published
-summary: Recent developments in Named Entity Recognition (NER) 
-  have resulted in better and better models. However, is there 
-  a glass ceiling? Do we know which types of errors are still hard or even impossible to correct? In this paper, we present a detailed analysis of the types of errors in state-of-the-art machine learning (ML) methods. Our study illustrates weak and strong points of the Stanford, CMU, FLAIR, ELMO and BERT models, as well as their shared limitations. We also introduce new techniques for improving annotation, training process, and for checking model quality and stability.
+summary: >-
+  Recent developments in Named Entity Recognition (NER) have resulted in better
+  and better models. However, is there a glass ceiling? Do we know which types
+  of errors are still hard or even impossible to correct? In this paper, we
+  present a detailed analysis of the types of errors in state-of-the-art machine
+  learning (ML) methods. Our study illustrates weak and strong points of the
+  Stanford, CMU, FLAIR, ELMO and BERT models, as well as their shared
+  limitations. We also introduce new techniques for improving annotation,
+  training process, and for checking model quality and stability.
 tags:
 - nlp
 links:
