@@ -1,0 +1,22 @@
+type: article
+title: 'Mirror, Mirror on the Wall: Prompt Echoing in Instruct Language Models'
+authors:
+- Inez Okulska
+- Bartosz Naskręcki
+- Jan Piotrowski
+- Tomasz Steifer
+year: 2026
+venue: Findings of EMNLP 2026
+stage: published
+summary: >
+  Studies prompt echoing, a failure mode in which instruct language models repeat
+  the prompt instead of answering it, and asks whether it stems from memorized
+  training data or from misaligned internal copying (induction) mechanisms.
+tags:
+- llm
+- foundation-models
+- nlp
+- mechanistic-interpretability
+links:
+  paper: https://aclanthology.org/2026.findings-emnlp.1633/
+  pdf: https://aclanthology.org/2026.findings-emnlp.1633.pdf
