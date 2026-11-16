@@ -1,0 +1,30 @@
+type: article
+title: 'The Metagame of Interpretability and Meta-Attributions'
+authors:
+- Hubert Baniecki
+- Przemyslaw Biecek
+- Fabian Fumagalli
+year: 2026
+venue: NeurIPS 2026
+stage: published
+tags:
+- interpretability
+- vision-language-models
+- transformers
+- interactions
+- attributions
+summary: >-
+  How can an arbitrary attribution method be generalized from first principles to capture interactions? We answer this with
+  the metagame, a conceptual framework for quantifying second-order interaction effects of model explanations. We cast the
+  attribution value φᵢ of feature i as a cooperative game among the other features and compute its Shapley value, which
+  measures how much feature j influences the attribution of i, yielding the directional meta-attribution ϕⱼ→ᵢ. By decomposing
+  attribution itself rather than the model directly, meta-attributions extend any gradient- or attention-based method to
+  interactions, uniting removal-based perturbations with model internals. Theoretically, we prove that meta-attributions sum to
+  the first-order attribution they explain, a hierarchical decomposition that Shapley interactions and integrated Hessians turn
+  out to perform implicitly. Empirically, we demonstrate that meta-attributions deliver insights across diverse
+  interpretability applications: (i) quantifying token interactions in instruction-tuned language models, (ii) explaining
+  cross-modal similarity in vision-language encoders, and (iii) interpreting text-to-image concepts in multimodal diffusion
+  transformers.
+links:
+  preprint: https://arxiv.org/abs/2605.06295
+  paper: https://openreview.net/forum?id=yHeBdE6C4F
