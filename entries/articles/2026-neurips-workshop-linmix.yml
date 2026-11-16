@@ -1,0 +1,17 @@
+type: article
+title: 'LinMix: Data Mixing as Linear Domain Attribution'
+authors:
+- Hubert Baniecki
+- Przemyslaw Biecek
+- Martin Pawelczyk
+year: 2026
+venue: NeurIPS 2026 Workshop on Attributing Model Behavior at Scale
+stage: preprint
+tags:
+- language-models
+- pretraining
+- data-mixing
+- attribution
+links:
+  preprint: https://arxiv.org/abs/2610.37390
+  paper: https://openreview.net/forum?id=VO8iMqGA6p

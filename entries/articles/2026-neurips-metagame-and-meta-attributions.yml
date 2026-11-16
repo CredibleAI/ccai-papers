@@ -1,0 +1,18 @@
+type: article
+title: 'The Metagame of Interpretability and Meta-Attributions'
+authors:
+- Hubert Baniecki
+- Przemyslaw Biecek
+- Fabian Fumagalli
+year: 2026
+venue: NeurIPS 2026
+stage: published
+tags:
+- interpretability
+- vision-language models
+- transformers
+- interactions
+- attributions
+links:
+  preprint: https://arxiv.org/abs/2605.06295
+  paper: https://openreview.net/forum?id=yHeBdE6C4F
