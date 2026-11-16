@@ -9,7 +9,7 @@ venue: NeurIPS 2026
 stage: published
 tags:
 - interpretability
-- vision-language models
+- vision-language-models
 - transformers
 - interactions
 - attributions
