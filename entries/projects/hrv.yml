@@ -1,0 +1,13 @@
+type: project
+title: "Heart Rate Variability and Mathematical Games in Schizophrenia Patients"
+authors:
+  - Kamil Ksiazek
+year: 2026
+status: active
+summary: >
+  The project relies on measuring heart rate variability (HRV), both in the time and frequency domains, in schizophrenia patients of the psychiatric ward while solving their own projected mathematical game. We also measure HRV in a resting state 5 minutes before starting the game and 5 minutes after finishing solving the task. For comparison purposes, we have a control group performing the same sequence of tasks.
+
+  The project is realized in cooperation with the Medical University of Silesia (Magdalena Piegza, Wilhelm Masarczyk, Paweł Dębski, Zbigniew Pankiewicz) and the Institute of Theoretical and Applied Informatics of the Polish Academy of Sciences (Przemysław Głomb, Michał Romaszewski).
+
+tags: [hrv, schizophrenia, mathematics]
+contact: kamil.ksiazek@pw.edu.pl

@@ -1,0 +1,16 @@
+type: project
+title: "Autism Detection with Computer Vision"
+authors:
+  - Kamil Ksiazek
+year: 2026
+status: active
+summary: >
+  The project relies on autism detection in children and is dedicated to children up to 5-6 years old.
+  The goal is to predict the results of the ADOS-2 test (or its subscores) and, in a long-term scenario, detect autism based on amateur videos made by parents. During the project, the analysis of videos with free play, blowing bubbles and eating a snack will be performed, as they are initially selected as most appropriate fragments of the ADOS-2 tests. For each child, their movement and interactions with a diagnostician will be assessed.
+
+  In the measurements, we use a pretrained computer vision model to track body keypoints and localize their positions in consecutive frames. Also, we automatically estimate gaze (to assess eye contact with a diagnostician) and recognize facial emotions.
+
+  The project is realized in cooperation with several students, i.e. Antoni Antoszek, Mikhail Saladkou, Uliana Bykova, in cooperation with the University of Warsaw (Jacek Rogala, Ewa Pisula), the Institute of Mother and Child in Warsaw (Elżbieta Stawicka, Izabela Chojnicka) and Adesse Center (Joanna Kwasiborska-Dudek).
+
+tags: [autism, vision, yolo, video, gaze, keypoints]
+contact: kamil.ksiazek@pw.edu.pl
